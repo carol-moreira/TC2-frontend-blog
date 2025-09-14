@@ -6,9 +6,16 @@ export default function EditPost() {
   };
 
   return (
-    <div>
-      <h1>Editar Post</h1>
-      <PostForm onSubmit={handleSubmit} initialData={{ title: "Post teste", author: "Carol", content: "Conteúdo aqui" }} />
+    <div className="max-w-3xl mx-auto mt-8 p-6 bg-white rounded-lg shadow-md">
+      <h1 className="text-3xl font-bold text-purple-600 mb-6">Editar Post</h1>
+      <PostForm
+        onSubmit={handleSubmit}
+        initialData={{
+          title: "Post teste",
+          author: "Carol",
+          content: "Conteúdo aqui",
+        }}
+      />
     </div>
   );
 }
