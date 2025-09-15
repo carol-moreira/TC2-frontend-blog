@@ -1,10 +1,26 @@
 import React from 'react';
-import Home from './pages/Home'; // Vamos usar a nossa nova Home
-import './index.css'; // Garanta que o CSS principal está importado
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Home from './pages/Home';
+import PostPage from './pages/PostPage';
+import './index.css';
 
 function App() {
-  // Por enquanto, vamos renderizar apenas a Home para o teste
-  return <Home />;
+  return (
+    <Router>
+      <div className="flex flex-col min-h-screen">
+        <Header />
+        <main className="flex-grow">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/post/:id" element={<PostPage />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </Router>
+  );
 }
 
 export default App;

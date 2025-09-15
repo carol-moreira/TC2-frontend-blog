@@ -13,8 +13,6 @@ const Header = () => {
           </div>
           <nav className="space-x-6 text-slate-600 dark:text-slate-300 font-medium">
             <Link to="/" className="hover:text-sky-500 dark:hover:text-sky-400 transition-colors">Home</Link>
-            <a href="#about" className="hover:text-sky-500 dark:hover:text-sky-400 transition-colors">Sobre</a>
-            <a href="#contact" className="hover:text-sky-500 dark:hover:text-sky-400 transition-colors">Contato</a>
           </nav>
         </div>
       </div>

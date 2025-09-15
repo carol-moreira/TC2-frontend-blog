@@ -1,35 +1,35 @@
 import React from 'react';
+import PostCard from '../components/PostCard';
+
+const mockPosts = [
+    { id: 1, title: 'Entendendo o useEffect no React', excerpt: 'O hook useEffect permite executar efeitos colaterais em componentes funcionais. Vamos explorar como usá-lo corretamente.', date: '2025-09-10T10:00:00Z' },
+    { id: 2, title: 'Tailwind CSS vs. Styled Components', excerpt: 'Uma comparação entre duas abordagens populares de estilização. Qual a melhor para o seu caso?', date: '2025-09-08T14:30:00Z' },
+    { id: 3, title: 'Gerenciamento de Estado com Zustand', excerpt: 'Descubra como o Zustand oferece uma solução simples e poderosa para o gerenciamento de estado global.', date: '2025-09-05T09:00:00Z' },
+];
 
 const Home = () => {
   return (
-    // Fundo com gradiente que cobre a tela inteira
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 flex flex-col items-center justify-center p-4 text-white">
-      
-      {/* Container principal com sombra, bordas e padding */}
-      <div className="bg-gray-800 bg-opacity-50 backdrop-blur-sm border border-gray-700 rounded-2xl shadow-2xl p-8 md:p-12 max-w-2xl text-center">
-
-        {/* Título Grande e Chamativo */}
-        <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-4">
-          Tailwind CSS Está Funcionando!
-        </h1>
-
-        {/* Subtítulo */}
-        <p className="text-lg md:text-xl text-gray-300 mb-8">
-          Se você está vendo esta caixa com gradiente e fontes estilizadas, sua configuração foi um sucesso.
-        </p>
-
-        {/* Botão com efeito de hover */}
-        <button className="bg-sky-500 hover:bg-sky-400 text-white font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-110 shadow-lg">
-          Começar a Criar
-        </button>
-
+    <>
+      {/* Seção de Destaque (Hero) */}
+      <div className="w-full bg-white dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700">
+        <div className="container mx-auto max-w-5xl px-6 py-16 text-center">
+          <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white">Bem-vindo ao Tech Insights</h1>
+          <p className="mt-4 text-lg text-slate-600 dark:text-slate-300">
+            Seu blog sobre desenvolvimento, tecnologia e carreira.
+          </p>
+        </div>
       </div>
 
-      <p className="mt-8 text-gray-500">
-        Agora você pode começar a construir seu blog.
-      </p>
-      
-    </div>
+      {/* Seção de Posts */}
+      <div className="container mx-auto max-w-5xl px-6 py-12">
+        <h2 className="text-3xl font-bold text-slate-800 dark:text-slate-100 mb-8">Últimos Posts</h2>
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {mockPosts.map(post => (
+            <PostCard key={post.id} post={post} />
+          ))}
+        </div>
+      </div>
+    </>
   );
 };
 
