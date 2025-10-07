@@ -23,30 +23,32 @@ Este projeto faz parte da Pós-graduação em Desenvolvimento Full Stack da FIAP
 ---------------------------------------------------------------
 🏗️ ESTRUTURA DE PASTAS
 ---------------------------------------------------------------
+```
 src/
- ├── api/               -> Funções de integração com o backend (Axios)
- │    └── posts.js
- ├── components/        -> Componentes reutilizáveis (Navbar, Layout, Modal)
- │    ├── Navbar.jsx
- │    ├── Layout.js
- │    └── ConfirmModal.jsx
- ├── context/           -> Contextos globais (ex.: autenticação)
- │    └── AuthContext.jsx
- ├── pages/             -> Páginas principais
- │    ├── Home.jsx
- │    ├── Post.jsx
- │    ├── Admin.jsx
- │    ├── Login.jsx
- │    └── CreatePost.jsx
- ├── routes/            -> Definições de rotas e proteção de páginas
- │    ├── AppRoutes.jsx
- │    └── ProtectedRoute.jsx
- ├── styles/            -> Estilos globais e temas
- │    ├── GlobalStyles.js
- │    └── theme.js
- ├── App.jsx
- ├── index.js
- └── assets/            -> Imagens e ícones estáticos
+     ├── api/               -> Funções de integração com o backend (Axios)
+     │    └── posts.js
+     ├── components/        -> Componentes reutilizáveis (Navbar, Layout, Modal)
+     │    ├── Navbar.jsx
+     │    ├── Layout.js
+     │    └── ConfirmModal.jsx
+     ├── context/           -> Contextos globais (ex.: autenticação)
+     │    └── AuthContext.jsx
+     ├── pages/             -> Páginas principais
+     │    ├── Home.jsx
+     │    ├── Post.jsx
+     │    ├── Admin.jsx
+     │    ├── Login.jsx
+     │    └── CreatePost.jsx
+     ├── routes/            -> Definições de rotas e proteção de páginas
+     │    ├── AppRoutes.jsx
+     │    └── ProtectedRoute.jsx
+     ├── styles/            -> Estilos globais e temas
+     │    ├── GlobalStyles.js
+     │    └── theme.js
+     ├── App.jsx
+     ├── index.js
+     └── assets/            -> Imagens e ícones estáticos
+```
 
 ---------------------------------------------------------------
 ⚙️ CONFIGURAÇÃO DO AMBIENTE
