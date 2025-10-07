@@ -1,93 +1,131 @@
-📝 Blog Frontend – Tech Challenge Fase 2
-💡 Descrição do Projeto
+📰 BLOG FRONTEND – TECH CHALLENGE FASE 3 (FIAP PÓS FULL STACK)
 
-Este é o frontend da aplicação de blog educacional, desenvolvido para professores da rede pública.
-Aqui é possível interagir com o backend (API RESTful) para criar, listar, editar e excluir postagens de forma prática e intuitiva.
+---------------------------------------------------------------
+💡 SOBRE O PROJETO
+---------------------------------------------------------------
+O Blog Frontend é uma aplicação web construída em React para consumir o backend do Tech Challenge Fase 3.
+O objetivo é oferecer uma interface moderna e responsiva para que professores e alunos possam criar, editar,
+listar e excluir postagens, promovendo o compartilhamento de conhecimento de forma prática e intuitiva.
 
-O objetivo foi integrar a interface do usuário ao backend já existente, garantindo usabilidade, responsividade e experiência fluida.
+Este projeto faz parte da Pós-graduação em Desenvolvimento Full Stack da FIAP.
 
-🏗️ Arquitetura da Solução
+---------------------------------------------------------------
+🧩 ARQUITETURA DA SOLUÇÃO
+---------------------------------------------------------------
+- Frontend: React + Vite ou CRA (Create React App)
+- Linguagem: JavaScript (ES6+)
+- Estilização: Styled-components
+- Comunicação com API: Axios
+- Gerenciamento de rotas: React Router DOM
+- Autenticação: Context API + ProtectedRoute
+- Build e execução: Node.js + npm
 
-Frontend: React.js
+---------------------------------------------------------------
+🏗️ ESTRUTURA DE PASTAS
+---------------------------------------------------------------
+src/
+ ├── api/               -> Funções de integração com o backend (Axios)
+ │    └── posts.js
+ ├── components/        -> Componentes reutilizáveis (Navbar, Layout, Modal)
+ │    ├── Navbar.jsx
+ │    ├── Layout.js
+ │    └── ConfirmModal.jsx
+ ├── context/           -> Contextos globais (ex.: autenticação)
+ │    └── AuthContext.jsx
+ ├── pages/             -> Páginas principais
+ │    ├── Home.jsx
+ │    ├── Post.jsx
+ │    ├── Admin.jsx
+ │    ├── Login.jsx
+ │    └── CreatePost.jsx
+ ├── routes/            -> Definições de rotas e proteção de páginas
+ │    ├── AppRoutes.jsx
+ │    └── ProtectedRoute.jsx
+ ├── styles/            -> Estilos globais e temas
+ │    ├── GlobalStyles.js
+ │    └── theme.js
+ ├── App.jsx
+ ├── index.js
+ └── assets/            -> Imagens e ícones estáticos
 
-Estilização: Styled-components
+---------------------------------------------------------------
+⚙️ CONFIGURAÇÃO DO AMBIENTE
+---------------------------------------------------------------
+PRÉ-REQUISITOS:
+- Node.js 18+
+- npm 9+
+- Backend configurado e rodando (TechChallengeFiapFase3Back)
 
-Roteamento: React Router DOM
+---------------------------------------------------------------
+🔑 VARIÁVEIS DE AMBIENTE
+---------------------------------------------------------------
+Crie um arquivo chamado .env na raiz do projeto com o conteúdo abaixo:
 
-Comunicação com Backend: Axios (REST API)
+REACT_APP_API_URL=http://localhost:3000
 
-Backend: Blog Backend – Tech Challenge Fase 2
+Essa variável define o endpoint da API utilizada pelo frontend.
 
+---------------------------------------------------------------
+🚀 COMO RODAR O PROJETO
+---------------------------------------------------------------
+1. Clonar o repositório:
+   git clone https://github.com/carol-moreira/TC2-frontend-blog.git
 
-📂 Estrutura de Pastas
+2. Entrar na pasta:
+   cd TC2-frontend-blog
 
-blog-frontend/
-├── public/             # Arquivos estáticos
-├── src/
-│   ├── assets/         # Imagens, ícones e outros arquivos estáticos
-│   ├── components/     # Componentes reutilizáveis (UI)
-│   ├── pages/          # Páginas principais do app
-│   ├── services/       # Configuração de API (axios)
-│   ├── styles/         # Estilos globais e temas
-│   ├── App.js          # Componente raiz
-│   └── index.js        # Ponto de entrada
-└── package.json
+3. Instalar dependências:
+   npm install
 
-⚙️ Como Executar o Projeto
+4. Rodar a aplicação:
+   npm start
 
-Clonar o repositório:
-git clone https://github.com/seu-repositorio/blog-frontend.git
-cd blog-frontend
+5. Acessar:
+   http://localhost:3001
 
-Instalar dependências:
-npm install
+---------------------------------------------------------------
+🧠 PRINCIPAIS FUNCIONALIDADES
+---------------------------------------------------------------
+🏠 Home – Lista todas as postagens com título, autor e resumo
+🔍 Busca – Filtra posts por palavra-chave
+📖 Leitura – Exibe o conteúdo completo de uma postagem
+✏️ Criação – Permite criar novas postagens
+🔐 Login – Autenticação simples via contexto
+⚙️ Admin – Área restrita com CRUD completo e modal de confirmação
 
-Executar em ambiente de desenvolvimento:
-npm start
+---------------------------------------------------------------
+🎨 IDENTIDADE VISUAL
+---------------------------------------------------------------
+- Paleta inspirada na Alura (gradientes azul/violeta)
+- Layout responsivo com styled-components
+- Feedback visual em navegação ativa
+- Modal de confirmação de exclusão
 
-Acessar no navegador:
-http://localhost:3000
+---------------------------------------------------------------
+🧪 TESTES E QUALIDADE
+---------------------------------------------------------------
+- Recomendado: ESLint + Prettier
+- Possível expansão: Jest + React Testing Library
+- Boas práticas:
+  * Componentização
+  * Separação de responsabilidades
+  * Hooks reutilizáveis
+  * Variáveis de ambiente documentadas
 
+---------------------------------------------------------------
+👩‍💻 AUTORES
+---------------------------------------------------------------
+Carolina Moreira 
+Bruna Moura 
+Fernanda Magalhães
 
-✅ Funcionalidades
+---------------------------------------------------------------
+📚 REFERÊNCIAS
+---------------------------------------------------------------
+FIAP Pós Tech – Desenvolvimento Full Stack
+React Docs: https://react.dev/
+Styled Components: https://styled-components.com/
+Axios: https://axios-http.com/
+React Router: https://reactrouter.com/
 
-📌 Listagem de postagens
-
-✏️ Criação de nova postagem
-
-🗑️ Exclusão de postagens
-
-🔍 Busca de postagens por título ou conteúdo
-
-📱 Interface responsiva
-
-
-🛠️ Tecnologias Utilizadas
-
-React.js
-
-Styled-components
-
-React Router DOM
-
-Axios
-
-
-👥 Equipe & Créditos
-
-Desenvolvido por:
-
-Bruna da Silva Moura
-
-Carolina de Sousa Rodrigues Moreira
-
-Fernanda Vieira Magalhães
-
-
-🚀 Próximos Passos
-
-Melhorar testes de integração
-
-Implementar autenticação de usuários
-
-Adicionar paginação de postagens
+---------------------------------------------------------------
