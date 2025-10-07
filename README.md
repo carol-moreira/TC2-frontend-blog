@@ -81,7 +81,7 @@ Essa variável define o endpoint da API utilizada pelo frontend.
    npm start
 
 5. Acessar:
-   http://localhost:3001
+   http://localhost:3000
 
 ---------------------------------------------------------------
 🧠 PRINCIPAIS FUNCIONALIDADES
