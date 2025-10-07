@@ -57,7 +57,6 @@ export default function Login() {
         </FormGroup>
         <button type="submit">Entrar</button>
         <p style={{ marginTop: 8, color: "#666", textAlign: "center" }}>
-          (Mock) Aceita qualquer usuário/senha.
         </p>
       </LoginForm>
     </LoginLayout>
