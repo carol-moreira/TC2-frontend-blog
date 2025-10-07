@@ -96,11 +96,8 @@ Essa variável define o endpoint da API utilizada pelo frontend.
 ---------------------------------------------------------------
 🎨 IDENTIDADE VISUAL
 ---------------------------------------------------------------
-- Paleta inspirada na Alura (gradientes azul/violeta)
+- Paleta neutra
 - Layout responsivo com styled-components
-- Feedback visual em navegação ativa
-- Modal de confirmação de exclusão
-
 ---------------------------------------------------------------
 🧪 TESTES E QUALIDADE
 ---------------------------------------------------------------
